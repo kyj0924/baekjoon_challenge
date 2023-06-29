@@ -1,8 +1,10 @@
+import sys
+input = sys.stdin.readline
 N = int(input())
 word_list = []
 answerlist = []
 for i in range(0, N, 1):
-    word = input()
+    word = input().strip()
     if word not in word_list:
         word_list.append(word)
 word_list.sort()
